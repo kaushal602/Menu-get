@@ -1,4 +1,5 @@
 <?php
+$currebt_url = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
             $menu_name = 'header-menu';
             $locations = get_nav_menu_locations();
             $menu = wp_get_nav_menu_object( $menu_name );
